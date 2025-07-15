@@ -1,4 +1,8 @@
 # Dépendances principales
 Outils_Tkinter @ git+https://github.com/Maxe2005/Outils_Tkinter.git@main
+
 Pillow
 pytest
+flake8
+black
+pdoc

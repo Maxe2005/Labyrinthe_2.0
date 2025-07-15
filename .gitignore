@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environnements virtuels
+.venv/
+venv/
+
+# Documentation générée
+/docs/
+
+# Autres fichiers temporaires
+*.log
