@@ -3,10 +3,8 @@ Fenêtre principale de l'application Labyrinthe (Tkinter).
 """
 import tkinter as tk
 from .canvas import LabyrintheCanvas
-
-
-
 import tkinter.messagebox as messagebox
+
 
 class Fenetre(tk.Tk):
     """

@@ -8,4 +8,5 @@ lint:
 	flake8 labyrinthe/
 
 docs:
-	pdoc --html labyrinthe --output-dir docs --force
+	rm -rf docs
+	pdoc labyrinthe -o docs
