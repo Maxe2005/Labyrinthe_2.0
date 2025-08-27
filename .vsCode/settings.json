@@ -2,7 +2,7 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
