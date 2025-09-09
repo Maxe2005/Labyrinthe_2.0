@@ -30,3 +30,6 @@ class Laby_fen (Fenetre):
         self.grid_columnconfigure(1, weight=self.poids_barre_laterale_droite_x)
         self.grid_rowconfigure(0, weight=self.poids_barre_top_y)
         self.grid_rowconfigure(1, weight=self.poids_canvas_y)
+
+    def redimentionner(self, event=None):
+        pass
