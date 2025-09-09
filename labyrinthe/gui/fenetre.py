@@ -2,7 +2,7 @@
 Fenêtre principale de l'application Labyrinthe (Tkinter).
 """
 import tkinter as tk
-from Outils_Tkinter import Fenetre
+from ..Outils_Tkinter import Fenetre
 
 
 class Laby_fen (Fenetre):
@@ -16,6 +16,8 @@ class Laby_fen (Fenetre):
         self.min_y = 400
         self.minsize(self.min_x, self.min_y)
         self.init_config_grid()
+        self.init_logo(self, [0, 0])
+        self.open_image("labyrinthe/ressources/Logos/logo_2.jpg")
         # self.bind("<Button-3>", self.redimentionner)
 
     def init_config_grid(self):

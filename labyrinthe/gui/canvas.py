@@ -3,7 +3,7 @@ Canvas d'affichage du labyrinthe.
 """
 
 import tkinter as tk
-from Outils_Tkinter.Structure_globale import Canvas
+from ..Outils_Tkinter import Canvas
 
 
 class Laby_canvas(Canvas):
