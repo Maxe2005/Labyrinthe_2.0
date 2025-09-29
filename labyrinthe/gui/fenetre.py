@@ -1,11 +1,13 @@
 """
 Fenêtre principale de l'application Labyrinthe (Tkinter).
 """
+
 import tkinter as tk
+import os
 from ..Outils_Tkinter import Fenetre
 
 
-class Laby_fen (Fenetre):
+class Laby_fen(Fenetre):
     def __init__(self, x=1000, y=800):
         tk.Tk.__init__(self)
         self.x = x  # = self.winfo_screenwidth() -200
@@ -17,7 +19,14 @@ class Laby_fen (Fenetre):
         self.minsize(self.min_x, self.min_y)
         self.init_config_grid()
         self.init_logo(self, [0, 0])
-        self.open_image("labyrinthe/ressources/Logos/logo_2.jpg")
+
+        # Construire le chemin absolu vers le logo
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        logo_path = os.path.join(current_dir, "..", "ressources", "Logos", "logo_2.jpg")
+        logo_path = os.path.normpath(logo_path)
+
+        self.open_image(logo_path)
+        self._set_window_icon(logo_path)
         # self.bind("<Button-3>", self.redimentionner)
 
     def init_config_grid(self):

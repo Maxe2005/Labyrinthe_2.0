@@ -1,12 +1,15 @@
 run:
-	python -m labyrinthe.main
+	.venv/bin/python -m labyrinthe.main
 
 test:
-	pytest tests/
+	.venv/bin/python -m pytest tests/
 
 lint:
-	flake8 labyrinthe/
+	.venv/bin/python -m flake8 labyrinthe/
+
+format:
+	.venv/bin/python -m black labyrinthe/ tests/
 
 docs:
 	rm -rf docs
-	pdoc labyrinthe -o docs
+	.venv/bin/python -m pdoc labyrinthe -o docs

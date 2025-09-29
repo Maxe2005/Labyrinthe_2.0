@@ -1,11 +1,13 @@
 """
 Module de gestion de la grille du labyrinthe.
 """
+
 from typing import List, Any, Optional
 
 
 class Grille:
     """Gère la structure et les opérations sur la grille du labyrinthe."""
+
     def __init__(self, lab: Optional[List[List[Any]]] = None):
         self.lab = lab or [[]]
         self.x = len(self.lab[0]) if self.lab and self.lab[0] else 0
