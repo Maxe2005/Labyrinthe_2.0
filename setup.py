@@ -11,7 +11,6 @@ setup(
         "pytest",
         "flake8",
         "black",
-        # Dépendance externe à ajouter manuellement si besoin
     ],
     python_requires=">=3.8",
 )
